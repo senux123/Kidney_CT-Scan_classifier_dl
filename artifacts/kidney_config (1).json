@@ -1,0 +1,9 @@
+{
+    "model_name": "resnet18",
+    "num_classes": 1,
+    "image_size": 224,
+    "class_names": [
+        "Healthy",
+        "Abnormal"
+    ]
+}
