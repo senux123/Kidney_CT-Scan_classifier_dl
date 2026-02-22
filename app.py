@@ -36,7 +36,7 @@ def load_model():
     model.fc = nn.Linear(num_features, 1)
 
     # loading the weights exported from Kaggle
-    weights_path = "kidney_resnet18_weights.pt"
+    weights_path = "artifacts/kidney_resnet18_weights.pt"
     try:
         state_dict = torch.load(weights_path, map_location=torch.device('cpu'))
         model.load_state_dict(state_dict)
